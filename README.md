@@ -31,7 +31,7 @@ Teile:
 
 -Taster
 
--2 LED (z.B. grün für Meldung "Flasche voll" und rot für "Füllvorgang"
+-2 LED (z.B. grün für Meldung "Flasche voll" und rot (Auch  Blink-LED) für "Füllvorgang"
 
 -10k Pullup bzw. Pulldown Widerstände (3 St.)
 
