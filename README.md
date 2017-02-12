@@ -33,6 +33,10 @@ Teile: (s. auch parts.md)
 
 -I2C 16x2 LCD mit Backpack
 
+http://www.sunfounder.com/wiki/index.php?title=I%C2%B2C_LCD1602
+
+
+
 -China Relaisplatine (2-Kanal) 
 
 -2 Magnetventile 12V, z.B. 1/4" mit IQS schnellverbindern
@@ -44,7 +48,11 @@ Teile: (s. auch parts.md)
 -10k Pullup bzw. Pulldown Widerstände 
 
 
+
+
 Aufbau: s. Schema
+
+
 
 erforderliche Libraries:
 
