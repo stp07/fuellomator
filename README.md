@@ -1,6 +1,8 @@
 # fuellomator
 Halbautomatischer Gegendruckabfüller für Bier mit Arduino Uno
 
+Test Steuerung: https://youtu.be/0JZCbqLwJvY
+
 Basis: Gegendruckabfüller aus Heizung/Sanitärteilen mit z.B. 1/4" Anschlüssen für CO2 und Bier, erhältlich in Hobbybrauershops oder Selbstbau nach bekannten Anleitungen
 
 Funktionsweise:
