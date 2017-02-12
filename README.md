@@ -5,19 +5,25 @@ Test Steuerung: https://youtu.be/0JZCbqLwJvY
 
 Basis: Gegendruckabfüller aus Heizung/Sanitärteilen mit z.B. 1/4" Anschlüssen für CO2 und Bier, erhältlich in Hobbybrauershops oder Selbstbau nach bekannten Anleitungen (http://braumagazin.de/article/soda-kegs/  http://hobbybrauer.de/modules.php?name=eBoard&file=viewthread&tid=17245)
 
-Funktionsweise:
+Funktionsweise/Ablauf:
 
 -Tastendruck zum Start des Abfüllvorgangs, Magnetventil "CO2" öffnet für 4 Sekunden,
 
--Vorspannen einer Flasche mit Co2 für 4 Sekunden
+-Vorspannen einer Flasche mit Co2 für 4 Sekunden,
 
--CO2-Ventil schließt, Bierventil öffnet
+-CO2-Ventil schließt, Bierventil öffnet,
 
--Füllvorgang mit Bier gestoppt durch Füllstandssensor (Digitaleingang Arduino mit Pullup)
+-Füllvorgang mit Bier gestoppt durch Füllstandssensor (Digitaleingang Arduino mit Pullup),
+
+-Nach dem Abfüllvorgang wird das Abfüllrohr noch einmal kurz für 1 Sekunde zur Säuberung mit Co2 gespült.
+
+
+
+WIE?
 
 -Co2 und Bierleitung gesteuert durch Magnetventile über Relaisplatine an Digitalausgängen Arduino
 
--Füllgeschwindigkeit geregelt über CO2-Ablassventil
+-Füllgeschwindigkeit geregelt über CO2-Ablassventil,
 
 -Anzeigeausgabe über 16x2 LCD, jeweiliger Status wird angezeigt, zusätzlich Anzeige über 2 LEDs
 
