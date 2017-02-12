@@ -45,3 +45,13 @@ Teile: (s. auch parts.md)
 
 
 Aufbau: s. Schema
+
+erforderliche Libraries:
+
+-Wire.h
+
+-LiquidCrystal_I2C.h
+
+download: http://www.sunfounder.com/wiki/index.php?title=File:LiquidCrystal_I2C.zip
+
+
