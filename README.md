@@ -15,6 +15,8 @@ Funktionsweise:
 
 -Co2 und Bierleitung gesteuert durch Magnetventile über Relaisplatine an Digitalausgängen Arduino
 
+-Füllgeschwindigkeit geregelt über CO2-Ablassventil
+
 -Anzeigeausgabe über 16x2 LCD, jeweiliger Status wird angezeigt, zusätzlich Anzeige über 2 LEDs
 
 Teile:
