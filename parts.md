@@ -12,6 +12,8 @@ https://www.roboter-bausatz.de/965/uno-r3-mega328p-atmega16u2-board-arduino-komp
 
 I2C 16x2 LCD mit Backpack
 
+https://www.amazon.de/gp/product/B019K5X53O/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1
+
 https://www.roboter-bausatz.de/95/lcd-display-modul-1602-hd44780-mit-twi-controller
 
 Taster
