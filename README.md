@@ -19,7 +19,7 @@ Funktionsweise:
 
 -Anzeigeausgabe über 16x2 LCD, jeweiliger Status wird angezeigt, zusätzlich Anzeige über 2 LEDs
 
-Teile:
+Teile: (s. auch parts.md)
 
 -Arduino UNO Rev3 oder Clone
 
@@ -33,7 +33,7 @@ Teile:
 
 -2 LED (z.B. grün für Meldung "Flasche voll" und rot (Auch  Blink-LED) für "Füllvorgang"
 
--10k Pullup bzw. Pulldown Widerstände (3 St.)
+-10k Pullup bzw. Pulldown Widerstände 
 
 
 Aufbau: s. Schema
