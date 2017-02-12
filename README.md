@@ -3,7 +3,7 @@ Halbautomatischer Gegendruckabfüller für Bier mit Arduino Uno
 
 Test Steuerung: https://youtu.be/0JZCbqLwJvY
 
-Basis: Gegendruckabfüller aus Heizung/Sanitärteilen mit z.B. 1/4" Anschlüssen für CO2 und Bier, erhältlich in Hobbybrauershops oder Selbstbau nach bekannten Anleitungen (http://braumagazin.de/article/soda-kegs/   Füllrohr: Steigrohr eines NC/CC-Kegs)
+Basis: Gegendruckabfüller aus Heizung/Sanitärteilen mit z.B. 1/4" Anschlüssen für CO2 und Bier, erhältlich in Hobbybrauershops oder Selbstbau nach bekannten Anleitungen (http://braumagazin.de/article/soda-kegs/  http://hobbybrauer.de/modules.php?name=eBoard&file=viewthread&tid=17245)
 
 Funktionsweise:
 
