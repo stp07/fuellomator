@@ -4,6 +4,7 @@ Halbautomatischer Gegendruckabfüller für Bier mit Arduino Uno
 Basis: Gegendruckabfüller aus Heizung/Sanitärteilen mit z.B. 1/4" Anschlüssen für CO2 und Bier, erhältlich in Hobbybrauershops oder Selbstbau nach bekannten Anleitungen
 
 Funktionsweise:
+
 -Tastendruck zum Start des Abfüllvorgangs, Magnetventil "CO2" öffnet für 4 Sekunden,
 
 -Vorspannen einer Flasche mit Co2 für 4 Sekunden
