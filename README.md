@@ -9,7 +9,7 @@ Funktionsweise/Ablauf:
 
 -Tastendruck zum Start des Abfüllvorgangs, Magnetventil "CO2" öffnet für 4 Sekunden,
 
--Vorspannen einer Flasche mit Co2 für 4 Sekunden,
+-Vorspannen einer Flasche mit CO2 für 4 Sekunden,
 
 -CO2-Ventil schließt, Bierventil öffnet,
 
