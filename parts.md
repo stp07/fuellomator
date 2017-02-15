@@ -26,7 +26,7 @@ China-Ralaisplatine, 2-Kanal (Achtung: lowactive)
 
 https://www.amazon.de/kwmobile-Kanal-Relais-Modul-Arduino/dp/B01EYW5SJM/ref=sr_1_5?ie=UTF8&qid=1486925868&sr=8-5&keywords=arduino+relais+2
 
-2 LEDs (oder 1LED, 1 Blink-LED)
+2 LEDs (oder 1 LED, 1 Blink-LED)
 
 2 Magnetventile, z.B. 12V, 1/4", stromlos geschlossen
 
