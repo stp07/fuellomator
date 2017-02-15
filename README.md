@@ -15,7 +15,7 @@ Funktionsweise/Ablauf:
 
 -Füllvorgang mit Bier gestoppt durch Füllstandssensor (Digitaleingang Arduino mit Pullup),
 
--Nach dem Abfüllvorgang wird das Abfüllrohr noch einmal kurz für 1 Sekunde zur Säuberung mit Co2 gespült.
+-Nach dem Abfüllvorgang wird das Abfüllrohr noch einmal kurz für 0,3 Sekunden zur Säuberung mit Co2 gespült.
 
 
 
