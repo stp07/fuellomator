@@ -3,6 +3,8 @@ Halbautomatischer Gegendruckabfüller für Bier mit Arduino Uno
 
 Test Steuerung: https://youtu.be/0JZCbqLwJvY (noch ohne CO2-Spülung am Ende)
 
+![alt tag](https://github.com/primsperle/fuellomator/blob/master/Aufbau.jpg)
+
 Basis: Gegendruckabfüller aus Heizung/Sanitärteilen mit z.B. 1/4" Anschlüssen für CO2 und Bier, erhältlich in Hobbybrauershops oder Selbstbau nach bekannten Anleitungen (http://braumagazin.de/article/soda-kegs/  http://hobbybrauer.de/modules.php?name=eBoard&file=viewthread&tid=17245)
 
 Funktionsweise/Ablauf:
@@ -52,7 +54,7 @@ http://www.sunfounder.com/wiki/index.php?title=I%C2%B2C_LCD1602
 
 Aufbau: 
 
-![alt tag](https://github.com/primsperle/fuellomator/blob/master/Aufbau.jpg)
+![alt tag](https://github.com/primsperle/fuellomator/blob/master/fuellomator_Schema.jpg)
 
 
 
