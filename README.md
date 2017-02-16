@@ -29,7 +29,7 @@ WIE?
 
 -Anzeigeausgabe über 16x2 LCD, jeweiliger Status wird angezeigt, zusätzlich Anzeige über 2 LEDs
 
-Teile: ![alt tag](https://github.com/primsperle/fuellomator/blob/master/parts.md)
+Teile: !(parts.md)
 
 -Arduino UNO Rev3 oder Clone
 
