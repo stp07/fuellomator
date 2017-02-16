@@ -52,7 +52,7 @@ http://www.sunfounder.com/wiki/index.php?title=I%C2%B2C_LCD1602
 
 Aufbau: 
 
-<Aufbau.jpg
+![alt tag](https://github.com/primsperle/fuellomator/blob/master/Aufbau.jpg)
 
 
 
