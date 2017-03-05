@@ -123,8 +123,6 @@ if  (digitalRead(voll)== LOW)   //wenns dann doch Pegelmeldung gibt....
     lcd.setCursor(0,1);
     lcd.print("entnehmen."); 
     digitalWrite(bier,HIGH);//Magnetventil Bier schließen
-    digitalWrite(co2,LOW);
-    delay(300);
     digitalWrite(co2,HIGH);
     digitalWrite(led2,LOW);
     digitalWrite(led,HIGH);            //Led grün leuchtet (Led 1)
