@@ -1,24 +1,16 @@
-//Steuerung für einen Gegendruck-Abfüller für Bier mit Arduino Uno Rev3, 2 Magnetventile, China-Relaisplatine (2er)
 //2017 by Peter Lauer Primsperle Brewing
+const int co2=5;   //lowactive
+const int bier=6;  // lowactive
+const int fuellen=4; //fill, pulldown 10k
+const int led=7;    //full
+const int voll=8;   
+const int led2=9;   //Blink-LED 
 
 
-//Pinbelegung Ein- und Ausgänge:
-const int co2=5;   // Magnetschalter CO2 über Relais (Schaltlogik umgedreht,lowactive)
-const int bier=6;  // Magnetschalter Bier über Relais (Schaltlogik umgedreht,lowactive)
-const int fuellen=4; //Starttaster Füllvorgang, Pulldown-Widerstand 10k
-const int led=7;    //LED als Anzeige für fertigen Füllvorgang, (grün), Widerstand 150Ohm
-const int voll=8;   //Sensor bzw. Kontakt "volle Flasche"  mit Pullup-Widerstand, damit 5V anliegen zur permanenten Messung, kein Kontakt= 5v=High
-const int led2=9;   //Blink-LED während Füllvorgang (rot), Widerstand 150 Ohm
-
-
-//Display an A5: SCL und A4: SDA
-
+//Display I2C: A5=SCL  A4=SDA
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-
-
 
 void setup()  
 {
@@ -43,7 +35,7 @@ void setup()
 
 Serial.begin(9600);
   
-//LCD Setup ------------------------------------
+//LCD Setup
   lcd.init(); 
   lcd.backlight();
   
@@ -58,11 +50,7 @@ delay (4000);
    
    
    lcd.clear();
-
-   
-
 }
-// Ende Setup ------------------------------------
 
 void loop() 
 {
@@ -71,70 +59,54 @@ void loop()
   digitalWrite (bier, HIGH);
   digitalWrite (fuellen, LOW);
   digitalWrite (voll, HIGH);
-  digitalWrite (led, LOW);    //Startzustand im Loop
+  digitalWrite (led, LOW);    //ready
 
  lcd.setCursor(5,0);
- lcd.print("Bereit");  //Startzustand mit Meldung "Bereit"
+ lcd.print("Bereit");  
  lcd.setCursor(1,1);
  lcd.print("Flasche einst.");
 
-
-
-
- //-------------------------wenn Tastendruck ab hier weiter, sonst Verbleib im obigen Teil vom Loop--------------------------------------
- if (digitalRead(fuellen) == HIGH)    //wenn Taster "fuellen" gedrückt wird, dann CO2-Magnetventil öffnen und für 4 Sekunden vorspannen
+ if (digitalRead(fuellen) == HIGH)    //push to fill, preload Co2
    { 
     digitalWrite(co2,LOW);
 
      lcd.setCursor(0,0);
-     lcd.print("CO2 vorspannen,");  //Anzeige: Vorspannen
+     lcd.print("CO2 vorspannen,");  //print preload
      lcd.setCursor(0,1);
      lcd.print("bitte warten..."); 
-     delay (4000);                    //Vorspanndauer: 4 Sekunden, eventuell anpassen
-
-
-
-   
-//-------------Bier einfüllen----------------------------------------
-  digitalWrite(co2,HIGH);      //CO2-Ventil wieder schließen
-  digitalWrite(bier,LOW);    //Bierventil öffnen    
+     delay (4000);                    //preload 4s
+ 
+//fill beer
+  digitalWrite(co2,HIGH);      
+  digitalWrite(bier,LOW);     
   lcd.clear();
-while (digitalRead(voll) ==HIGH && digitalRead(co2)==HIGH) // während des Füllvorgangs, wenn die Pegelmeldung noch nicht erreicht ist....
+while (digitalRead(voll) ==HIGH && digitalRead(co2)==HIGH) 
   {
-   digitalWrite(bier,LOW);//--> Bierventil offen lassen
+   digitalWrite(bier,LOW);
    
    lcd.setCursor(0,0);
    lcd.print("Fuellen...");
    lcd.setCursor(0,1);
-   lcd.print("bitte warten...");  //Meldung "bitte warten"
+   lcd.print("bitte warten..."); 
    
    digitalWrite (led2,HIGH);
   }
-
-//--------------Füllvorgang beendet, Meldung----------------------------  
+//filled up
 if  (digitalRead(voll)== LOW)   //wenns dann doch Pegelmeldung gibt....      
  {
-
-
-  
     lcd.clear();
     lcd.setCursor(0,0);
     lcd.print("Ende - Flasche");
     lcd.setCursor(0,1);
     lcd.print("entnehmen."); 
-    digitalWrite(bier,HIGH);//Magnetventil Bier schließen
+    digitalWrite(bier,HIGH);
     digitalWrite(co2,HIGH);
     digitalWrite(led2,LOW);
-    digitalWrite(led,HIGH);            //Led grün leuchtet (Led 1)
-    delay(6000);                       //5 Sekunden halten
+    digitalWrite(led,HIGH);           
+    delay(6000);                    
  } 
-
  lcd.clear();
-
-
-
- 
-}//------------------Füll-Loop Ende-----------------------------------
-}//zurück zum Start
+}
+}
 
 
