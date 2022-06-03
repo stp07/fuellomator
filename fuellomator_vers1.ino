@@ -32,8 +32,6 @@ void setup()
 
   pinMode (led2, OUTPUT);
   digitalWrite (led2, LOW);
-
-Serial.begin(9600);
   
 //LCD Setup
   lcd.init(); 
