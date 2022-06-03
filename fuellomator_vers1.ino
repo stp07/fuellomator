@@ -90,7 +90,7 @@ while (digitalRead(voll) ==HIGH && digitalRead(co2)==HIGH)
    digitalWrite (led2,HIGH);
   }
 //filled up
-if  (digitalRead(voll)== LOW)   //wenns dann doch Pegelmeldung gibt....      
+if  (digitalRead(voll)== LOW)   //full
  {
     lcd.clear();
     lcd.setCursor(0,0);
